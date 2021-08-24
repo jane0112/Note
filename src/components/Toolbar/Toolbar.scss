@@ -1,0 +1,33 @@
+.toolbar {
+    padding: 10px 14px;
+    background: rgb(48, 48, 48);
+    color: #fff;
+    position: fixed;
+    z-index: 5;
+    height: 40px;
+    width: 50%;
+    border-bottom: 1px solid rgb(63, 63, 63);
+  }
+  .tool-icon {
+    color: #fff;
+    font-size: 20px;
+  }
+  .tool-btn {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: 0;
+  }
+  .full-screen{
+    width: 100%;
+  }
+  .hide{
+    display: none;
+  }
+  
+  @media (max-width:768px) {
+    .toolbar{
+      width: 100%;
+    }
+  }
+  

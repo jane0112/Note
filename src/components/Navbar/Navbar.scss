@@ -1,0 +1,24 @@
+.navbar {
+    position: fixed;
+    z-index: 6;
+    height: 50px;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    display: flex;
+}
+.navs{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 10px;
+}
+.navi-tem{
+    margin-right: 20px;
+}
+.nav-item-btn{
+    border:0;
+    cursor: pointer;
+}
+.nav-item-btn:not(:last-child){
+    border-right:1px solid gray;
+}
