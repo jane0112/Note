@@ -6,15 +6,13 @@ import NoteEditor from '../../components/NoteEditor/NoteEditor';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Note = () => {
-  const onGetContent = (data) => {
-    console.log(data);
-  };
+ 
   return (
   <div>
     <Navbar />
     <div className="layout-wrap">
         <div className="left-section">
-          <NoteEditor getContent={onGetContent} />
+          <NoteEditor />
         </div>
         <div className="right-section">
           <NoteViewer /*noteContent={screenType}*/ />
