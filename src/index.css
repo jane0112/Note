@@ -1,9 +1,13 @@
 @import 'codemirror/lib/codemirror.css';
 @import 'codemirror/theme/monokai.css';
+@import 'codemirror/theme/ayu-dark.css';
+@import'codemirror/theme/base16-light.css';
 
 * {
   box-sizing: border-box;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 body {
   margin: 0;
@@ -24,7 +28,7 @@ code {
   height: 100%;
 }
 
-.cm-s-monokai.CodeMirror {
+.cm-s-monokai.CodeMirror,.cm-s-ayu-dark.CodeMirror,.cm-s-base16-light.CodeMirror {
   height: 100%;
   font-size: 18px;
 }

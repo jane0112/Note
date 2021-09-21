@@ -1,24 +1,42 @@
 .navbar {
-    position: fixed;
-    z-index: 6;
-    height: 50px;
-    background-color: rgb(243, 243, 243);
-    width: 100%;
-    display: flex;
+  position: fixed;
+  z-index: 6;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  display: flex;
 }
-.navs{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    padding-left: 10px;
+.navs {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
-.navi-tem{
-    margin-right: 20px;
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding:14px;
+  &.title{
+    font-weight: 700;
+    font-size: 24px;
+  }
 }
-.nav-item-btn{
-    border:0;
-    cursor: pointer;
-}
-.nav-item-btn:not(:last-child){
-    border-right:1px solid gray;
+.nav-item-btn {
+  border: 0;
+  cursor: pointer;
+  background-color: none;
+  border-top: 1px solid rgb(179, 177, 177);
+  border-bottom: 1px solid rgb(179, 177, 177);
+  padding: 5px 10px;
+  &:not(:last-child){
+    border-right: 1px solid rgb(179, 177, 177);
+  }
+  &:first-child{
+    border-left:  1px solid rgb(179, 177, 177);
+    border-radius:10px 0 0 10px;
+  }
+  &:last-child{
+    border-right:  1px solid rgb(179, 177, 177);
+    border-radius:0 10px 10px 0;
+  }
 }
